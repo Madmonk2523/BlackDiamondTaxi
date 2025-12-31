@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Black Diamond Taxi & Fishing Tours - Turks and Caicos</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="logo">
+                <h1>🖤 BLACK DIAMOND</h1>
+                <p>Taxi & Fishing Tours</p>
+            </div>
+            <ul class="nav-menu">
+                <li><a href="#home" class="nav-link">Home</a></li>
+                <li><a href="#services" class="nav-link">Services</a></li>
+                <li><a href="#about" class="nav-link">About</a></li>
+                <li><a href="#contact" class="nav-link">Contact</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+        <div class="hero-content">
+            <h2>Welcome to Black Diamond</h2>
+            <p>Unforgettable Adventures in Turks and Caicos</p>
+            <button class="cta-button" onclick="scrollToServices()">Explore Our Services</button>
+        </div>
+    </section>
+
+    <!-- Main Image Section -->
+    <section class="main-image-section">
+        <img src="main.jpeg" alt="Black Diamond Taxi & Fishing Tours - Turks and Caicos Paradise" class="main-image">
+    </section>
+
+    <!-- Services Section -->
+    <section id="services" class="services">
+        <h2>Our Services</h2>
+        <div class="services-grid">
+            <!-- Taxi Service -->
+            <div class="service-card">
+                <div class="service-icon">🚕</div>
+                <h3>Taxi Service</h3>
+                <p>Professional transportation throughout Turks and Caicos. Reliable, comfortable, and on-time service to get you where you need to go.</p>
+            </div>
+
+            <!-- Iguana Island Tours -->
+            <div class="service-card">
+                <div class="service-icon">🦎</div>
+                <h3>Iguana Island Tours</h3>
+                <p>Visit the stunning Iguana Island and get up close with these magnificent creatures in their natural habitat. A truly unforgettable experience.</p>
+            </div>
+
+            <!-- Bottom Fishing -->
+            <div class="service-card">
+                <div class="service-icon">🪝</div>
+                <h3>Bottom Fishing</h3>
+                <p>Experience exciting bottom fishing adventures. Perfect for both beginners and experienced anglers. Catch grouper, snapper, and other tropical fish.</p>
+            </div>
+
+            <!-- Deep Sea Fishing -->
+            <div class="service-card">
+                <div class="service-icon">🐟</div>
+                <h3>Deep Sea Fishing</h3>
+                <p>Chase big game fish in the deep blue. Marlin, tuna, wahoo, and mahi-mahi await. An adrenaline-pumping adventure you won't forget.</p>
+            </div>
+
+            <!-- Snorkeling Tours -->
+            <div class="service-card">
+                <div class="service-icon">🤿</div>
+                <h3>Snorkeling Tours</h3>
+                <p>Explore vibrant coral reefs and tropical marine life. Crystal-clear waters and stunning underwater scenery await every snorkeler.</p>
+            </div>
+
+            <!-- Island Getaways -->
+            <div class="service-card">
+                <div class="service-icon">🏝️</div>
+                <h3>Island Getaways</h3>
+                <p>Escape to paradise with our custom island getaway packages. Relax on pristine beaches, explore hidden coves, and experience island bliss.</p>
+            </div>
+
+            <!-- Sunset Cruising -->
+            <div class="service-card">
+                <div class="service-icon">🌅</div>
+                <h3>Sunset Cruising</h3>
+                <p>Sail into the sunset and create magical memories. Enjoy tropical drinks, gentle waves, and some of the most beautiful sunsets in the Caribbean.</p>
+            </div>
+
+            <!-- Transportation -->
+            <div class="service-card">
+                <div class="service-icon">🌊</div>
+                <h3>Water Transportation</h3>
+                <p>Safe and scenic water transport between islands and to remote locations. Professional captains and modern, well-maintained vessels.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="about">
+        <div class="about-content">
+            <h2>About Black Diamond</h2>
+            <p>Welcome to Black Diamond Taxi & Fishing Tours, your premier destination for unforgettable adventures in beautiful Turks and Caicos. With years of experience and a passion for delivering exceptional service, we offer the perfect blend of transportation, water sports, and Caribbean adventure.</p>
+            
+            <div class="about-features">
+                <div class="feature">
+                    <h4>✓ Professional Service</h4>
+                    <p>Expert guides and drivers dedicated to your experience</p>
+                </div>
+                <div class="feature">
+                    <h4>✓ Safety First</h4>
+                    <p>All equipment maintained to highest standards</p>
+                </div>
+                <div class="feature">
+                    <h4>✓ Best Prices</h4>
+                    <p>Competitive rates without compromising quality</p>
+                </div>
+                <div class="feature">
+                    <h4>✓ Local Expertise</h4>
+                    <p>Insider knowledge of the best spots in Turks and Caicos</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact">
+        <h2>Get in Touch</h2>
+        <div class="contact-content">
+            <div class="contact-info">
+                <h3>Contact Information</h3>
+                <p><strong>Phone:</strong> +1 (649) 123-4567</p>
+                <p><strong>Email:</strong> info@blackdiamondtaxi.tc</p>
+                <p><strong>Location:</strong> Providenciales, Turks and Caicos Islands</p>
+                <p><strong>Hours:</strong> Available 24/7 for bookings</p>
+            </div>
+            
+            <form class="contact-form" onsubmit="handleSubmit(event)">
+                <input type="text" placeholder="Your Name" required>
+                <input type="email" placeholder="Your Email" required>
+                <input type="text" placeholder="Service Interest" required>
+                <textarea placeholder="Message" rows="5" required></textarea>
+                <button type="submit" class="cta-button">Send Message</button>
+            </form>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <p>&copy; 2025 Black Diamond Taxi & Fishing Tours. All rights reserved.</p>
+        <p>Turks and Caicos Islands | Your Adventure Awaits</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
