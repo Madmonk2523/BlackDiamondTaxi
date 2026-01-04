@@ -1,25 +1,27 @@
+// Hamburger menu toggle
+const hamburger = document.querySelector('.hamburger');
+const navMenu = document.querySelector('.nav-menu');
+
+hamburger.addEventListener('click', () => {
+    hamburger.classList.toggle('active');
+    navMenu.classList.toggle('active');
+});
+
+// Close menu when a link is clicked
+document.querySelectorAll('.nav-link').forEach(link => {
+    link.addEventListener('click', () => {
+        hamburger.classList.remove('active');
+        navMenu.classList.remove('active');
+    });
+});
+
 // Smooth scroll to services
 function scrollToServices() {
     document.getElementById('services').scrollIntoView({ behavior: 'smooth' });
 }
 
 // Handle form submission
-function handleSubmit(event) {
-    event.preventDefault();
-    
-    // Get form data
-    const form = event.target;
-    const name = form.elements[0].value;
-    const email = form.elements[1].value;
-    const service = form.elements[2].value;
-    const message = form.elements[3].value;
-    
-    // Show success message
-    alert(`Thank you, ${name}! We've received your inquiry about ${service}. We'll contact you at ${email} shortly.`);
-    
-    // Reset form
-    form.reset();
-}
+// Note: Contact form has been removed from the site
 
 // Smooth scrolling for navigation links
 document.querySelectorAll('.nav-link').forEach(link => {
