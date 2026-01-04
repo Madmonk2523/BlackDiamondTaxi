@@ -294,28 +294,88 @@ body {
 
 /* Contact Section */
 .contact {
+    background: linear-gradient(135deg, var(--light-bg) 0%, #f0f7ff 100%);
+    padding: 4rem 2rem;
+    margin: 3rem 0;
+}
+
+.contact-container {
     max-width: 1200px;
-    margin: 4rem auto;
-    padding: 0 2rem;
+    margin: 0 auto;
 }
 
-.contact h2 {
+.contact-header {
     text-align: center;
-    font-size: 2.5rem;
     margin-bottom: 3rem;
+}
+
+.contact-header h2 {
+    font-size: 2.5rem;
+    margin-bottom: 0.5rem;
     color: var(--primary-color);
 }
 
-.contact-info h3 {
-    font-size: 1.5rem;
-    margin-bottom: 1.5rem;
-    color: var(--primary-color);
+.contact-header p {
+    font-size: 1.1rem;
+    color: #666;
 }
 
-.contact-info p {
+.contact-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 2rem;
+    margin-bottom: 3rem;
+}
+
+.contact-card {
+    background: var(--white);
+    border-radius: 12px;
+    padding: 2rem;
+    text-align: center;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.08);
+    transition: all 0.3s ease;
+    border-top: 4px solid var(--accent-color);
+}
+
+.contact-card:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.12);
+}
+
+.contact-icon {
+    font-size: 3rem;
     margin-bottom: 1rem;
+    display: block;
+}
+
+.contact-card h3 {
+    font-size: 1.3rem;
+    margin-bottom: 0.8rem;
+    color: var(--primary-color);
+}
+
+.contact-detail {
     color: #555;
-    line-height: 1.8;
+    margin-bottom: 1.5rem;
+    font-size: 1rem;
+    line-height: 1.6;
+}
+
+.contact-link {
+    display: inline-block;
+    background: var(--accent-color);
+    color: var(--primary-color);
+    padding: 10px 25px;
+    border-radius: 5px;
+    text-decoration: none;
+    font-weight: 600;
+    transition: all 0.3s ease;
+    border: 2px solid var(--accent-color);
+}
+
+.contact-link:hover {
+    background: transparent;
+    color: var(--accent-color);
 }
 
 /* Footer */
@@ -378,13 +438,13 @@ body {
     }
 
     .services h2,
-    .contact h2,
+    .contact-header h2,
     .about-content h2 {
         font-size: 1.8rem;
     }
 
-    .contact-content {
-        grid-template-columns: 1fr;
+    .contact-grid {
+        grid-template-columns: repeat(2, 1fr);
     }
 
     .services-grid {
@@ -421,5 +481,24 @@ body {
 
     .logo p {
         font-size: 0.75rem;
+    }
+
+    .contact-grid {
+        grid-template-columns: 1fr;
+        gap: 1.5rem;
+    }
+
+    .contact-card {
+        padding: 1.5rem;
+    }
+
+    .social-links {
+        gap: 1rem;
+    }
+
+    .social-icon {
+        width: 45px;
+        height: 45px;
+        font-size: 1.2rem;
     }
 }
